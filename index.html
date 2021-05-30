@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Registration form</title>
+  <link href="style.css" rel="stylesheet">
+ </head>
+ <body>
+ <h1 class="header">Форма регистрации</h1>
+  <form method="post" action="">
+   <p><input name="textfield" id="name" placeholder="Введите имя" onblur="checkName()"></p>
+   <p id="errName" class="err"></p>
+   <p><input name="textfield" id="surname" placeholder="Введите фамилию" onblur="checkSurname()"></p>
+   <p id="errSurname" class="err"></p>
+   <p><input name="textfield" id="email" placeholder="Введите EMail" onblur="checkEmail()"></p>
+   <p id="errEmail" class="err"></p>
+   <p><input name="textfield" id="password" placeholder="Введите пароль" onblur="checkPassword()"></p>
+   <p id="errPassword" class="err"></p>
+   <p><input name="textfield" id="repeatPassword" placeholder="Повторите пароль" onblur="checkRepeatPassword()"></p>
+   <p id="errRepeatPassword" class="err"></p>
+  </form>
+  <div class="err" id="errorMessage"></div>
+  <button id="registrationButton" onclick="checkForm()">Зарегистрироваться</button>
+  <script src="script.js"></script>
+  </body>
+</html>
